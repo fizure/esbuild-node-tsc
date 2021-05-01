@@ -13,6 +13,7 @@ export type Config = Partial<{
     baseDir?: string;
     filePatterns?: string[];
   };
+  watch?: boolean;
 }>;
 
 export async function readUserConfig(configPath: string): Promise<Config> {
